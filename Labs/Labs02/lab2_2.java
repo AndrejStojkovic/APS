@@ -192,15 +192,15 @@ public class SpecialSLLDelete<E> {
     //TODO: implement method
     public void specialDelete(SLL<E> list, int m) {
         SLLNode<E> el = list.getFirst();
-        int ct = 1;
+        int idx = 1;
 
         while(el != null) {
-            if(ct % m == 0) {
+            if(idx == m) {
                 list.delete(el);
-                ct = 0;
+                idx = 0;
             }
             el = el.succ;
-            ct++;
+            idx++;
         }
     }
 
