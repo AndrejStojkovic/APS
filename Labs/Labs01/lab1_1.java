@@ -1,3 +1,8 @@
+// Lab 1.1
+// For a given array of random numbers given from standard input,
+// perform a shift of all zeros at the beginning of the sequence.
+// Print the transformed array to standard output.
+
 import java.util.Scanner;
 
 public class PushZeroes {

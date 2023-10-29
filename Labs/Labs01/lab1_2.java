@@ -1,3 +1,8 @@
+// Lab 1.2
+// For a given word entered from standard input, print it reversed.
+// On input in the first line, the number of words that will be entered is given.
+// In the following lines, the words are entered.
+
 import java.util.Scanner;
 
 public class ReverseWord {
