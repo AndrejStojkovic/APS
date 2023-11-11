@@ -18,7 +18,6 @@ public class SumOfAbsoluteDifferences {
     static int solve(int numbers[], int N, int K) {
         int [][] mat = new int[N][K];
         int max = 0;
-
         for(int i = 0; i < N; i++) {
             for(int j = 1; j < K; j++) {
                 for(int k = 0; k < i; k++) {
@@ -27,7 +26,6 @@ public class SumOfAbsoluteDifferences {
                 max = Math.max(mat[i][j], max);
             }
         }
-
         return max;
     }
 

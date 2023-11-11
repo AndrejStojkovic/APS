@@ -15,14 +15,11 @@ import java.io.InputStreamReader;
 public class ZigZagSequence {
     static int najdiNajdolgaCikCak(int a[]) {
         if(a.length == 0) return 0;
-
         int ct = 1, max = 0;
         for(int i = 1; i < a.length; i++) {
-            if((a[i] > 0 && a[i - 1] < 0) || (a[i] < 0 && a[i - 1] > 0)) ct++;
-            else ct = 1;
+            ct = (a[i] > 0 && a[i - 1] < 0) || (a[i] < 0 && a[i - 1] > 0) ? ct + 1 : 1;
             max = Math.max(ct, max);
         }
-
         return max;
     }
 
