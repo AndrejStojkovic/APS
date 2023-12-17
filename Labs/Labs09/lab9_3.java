@@ -35,12 +35,7 @@ public class Main {
         list.sort(Passenger::compareTo);
         int curr = 0, max = 0;
         for(Passenger passenger : list) {
-            if(passenger.isBoarded) {
-                curr++;
-            } else {
-                curr--;
-            }
-
+            curr = passenger.isBoarded ? curr + 1 : curr - 1;
             max = Math.max(curr, max);
             if(curr > k) return false;
         }
